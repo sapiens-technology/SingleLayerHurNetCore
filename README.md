@@ -1,4 +1,5 @@
 Example of construction of an Artificial Neural Network with the single-layer HurNet architecture for two-dimensional numerical matrices.
+
 **(This is a version coded only with pure native Python and does not require any dependencies to work.)**
 
 # Single Layer HurNet (CORE)
