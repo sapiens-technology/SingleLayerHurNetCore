@@ -257,12 +257,12 @@ print(f'Outputs: {test_outputs}')
 end_time = time()
 duration_in_seconds =  end_time - start_time
 print('time spent: '+str(duration_in_seconds))
-# this example will run on a macbook m3 max (the most advanced of the moment)
+# this example code was run in a standard google colab environment
 ```
 ```bash
 Inputs: [[4, 2], [3, 1], [5, 4], [2, 1]]
 Outputs: [[6.0], [4.0], [9.0], [3.0]]
-time spent: 0.03168320655822754
+time spent: 0.0005502700805664062
 ```
 Now we will do the same example with the TensorFlow code library. Note that it will require much more code and that the result will be much slower.
 ```bash
@@ -294,14 +294,14 @@ print(f'Outputs: {test_outputs.tolist()}')
 end_time = time()
 duration_in_seconds =  end_time - start_time
 print('time spent: '+str(duration_in_seconds))
-# this example will run on a macbook m3 max (the most advanced of the moment)
+# this example code was run in a standard google colab environment
 ```
-Note that with TensorFlow it took 351 times more time (11.107148885726929 divided by 0.03168320655822754) than we would have spent with the HurNet network and yet the TensorFlow result was obtained with a much lower level of accuracy. Also remember that this time can increase exponentially as more data and more layers are added to the network.
+Note that with TensorFlow it took 103923 times more time (57.18585920333862 divided by 0.0005502700805664062) than we would have spent with the HurNet network and yet the TensorFlow result was obtained with a much lower level of accuracy. Also remember that this time can increase exponentially as more data and more layers are added to the network.
 ```bash
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 9ms/step
 Inputs: [[4.0, 2.0], [3.0, 1.0], [5.0, 4.0], [2.0, 1.0]]
 Outputs: [[6.13881778717041], [4.4135260581970215], [8.73843765258789], [3.6166493892669678]]
-time spent: 11.107148885726929
+time spent: 57.18585920333862
 ```
 Now look at the same example using the PyTorch code library.
 ```bash
@@ -346,13 +346,13 @@ print(f'Outputs: {test_outputs.tolist()}')
 end_time = time()
 duration_in_seconds =  end_time - start_time
 print('time spent: '+str(duration_in_seconds))
-# this example will run on a macbook m3 max (the most advanced of the moment)
+# this example code was run in a standard google colab environment
 ```
-With PyTorch optimizations it still took 13 times more time than with HurNet.
+With PyTorch optimizations it still took 11579 times more time than with HurNet.
 ```bash
 Inputs: [[4.0, 2.0], [3.0, 1.0], [5.0, 4.0], [2.0, 1.0]]
 Outputs: [[6.003105640411377], [4.010413646697998], [8.996774673461914], [3.0186996459960938]]
-time spent: 0.40598297119140625
+time spent: 6.3716912269592285
 ```
 
 ## Methods
